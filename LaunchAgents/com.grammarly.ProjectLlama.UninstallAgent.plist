@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>GD_AGENT_LABEL</key>
+		<string>com.grammarly.ProjectLlama.UninstallAgent</string>
+		<key>GD_AGENT_PLIST_PATH</key>
+		<string>/Users/moaadkhamlich/Library/LaunchAgents/com.grammarly.ProjectLlama.UninstallAgent.plist</string>
+		<key>GD_AGENT_WATCH_PATHS</key>
+		<string>"/Users/moaadkhamlich/Applications":"/Applications":"/Network/Applications":"/System/Applications"</string>
+		<key>GD_BUNDLE_ID</key>
+		<string>com.grammarly.ProjectLlama</string>
+		<key>GD_BUNDLE_NAME</key>
+		<string>Grammarly Desktop</string>
+	</dict>
+	<key>Label</key>
+	<string>com.grammarly.ProjectLlama.UninstallAgent</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/moaadkhamlich/Library/Application Support/com.grammarly.ProjectLlama/Scripts/Grammarly Uninstaller</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>WatchPaths</key>
+	<array>
+		<string>/Users/moaadkhamlich/Applications</string>
+		<string>/Applications</string>
+		<string>/Network/Applications</string>
+		<string>/System/Applications</string>
+	</array>
+</dict>
+</plist>
