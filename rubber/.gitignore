@@ -1,0 +1,7 @@
+/rubber.t2d
+
+*.pyc
+src/version.py
+build
+build-stamp
+in

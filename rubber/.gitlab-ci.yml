@@ -1,0 +1,30 @@
+image: "flowdalic/debian-testing-dev:1.12"
+
+before_script:
+  - |
+    readarray TOOLS <<EOF
+    pylint
+    pyflakes
+    yapf
+    EOF
+    for tool in ${TOOLS[@]}; do
+      echo -n "$tool version: "
+      $tool --version
+    done
+
+build:
+  script:
+    - make build
+
+test:
+  script:
+    - |
+      cd tests
+      touch cweb-latex/disable
+      touch graphicx-dotted-files/disable
+      touch pythontex/disable
+      ./run.sh --debchroot *
+
+lint:
+  script:
+    - make lint
