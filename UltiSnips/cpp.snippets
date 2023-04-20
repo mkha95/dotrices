@@ -1,0 +1,49 @@
+snippet class "class" bA
+class $1 {
+	$2
+	public:
+	$0
+};
+
+endsnippet
+
+snippet include "include" bA
+#include <$0>
+endsnippet
+
+snippet << "cout" bA
+std::cout<<"$1"<<std::endl;
+endsnippet
+
+
+
+snippet duration "duration" bA
+auto t0=std::chrono::high_resolution_clock::now();
+$(VISUAL)
+auto t1=std::chrono::high_resolution_clock::now();
+auto deltat=std::chrono::duration_cast<std::chrono::milliseconds>(t1-t0).count();
+endsnippet
+
+
+snippet main "main" bA
+int main(){
+$0
+return 0;
+}
+endsnippet
+
+
+
+
+snippet cmt "comment" bA
+/** @brief $1
+	$0
+*/
+endsnippet
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+snippet template "Basic template" b
+%This is my super simple Real Analysis Homework template
+
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{cancel}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+
+
+\newcommand{\tens}[1]{%
+  \mathbin{\mathop{\otimes}\limits_{#1}}%
+}
+
+\bibliographystyle{plain} % We choose the "plain" reference style
+
+
+
+\title{$1}
+\author{KHAMLICH MOAAD}
+\date\today
+%This information doesn't actually show up on your document unless you use the maketitle command below
+\begin{document}
+	\maketitle %This command prints the title based on information entered above
+	$2
+	%Section and subsection automatically number unless you put the asterisk next to them.
+	\section*{$3}
+	$0
+\end{document}
+endsnippet
